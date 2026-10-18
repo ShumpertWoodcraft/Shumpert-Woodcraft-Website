@@ -1,5 +1,5 @@
 .logo{
-   height: 300px;
+   height: 100%;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -76,29 +76,27 @@ body{
     text-align: center;
     margin-left: auto;
 }
+.facebook img:hover{
+    height: 225px;
+
+}
 /*.mark{
     background-color: hsl(0, 0%, 72%);
 }*/
 .footer{
     background-color: hsl(0, 0%, 25%);
-    position: fixed;
     bottom: 0%;
     width: 100%;
     height: 50px;
     display: flex;
 }
-.content{
-    color: white;
-    width: 50%;
-    text-align: right;
-    margin-left: auto;
-    margin-right: 20px;
-}
-.check{
+.check a{
     color: hsl(0, 0%, 100%);
     width: 50%;
     text-align: center;
-    text-decoration: none;
+}
+.facebook img{
+    height: 200px;
 }
 @media screen and (max-width: 768px) {
   
@@ -122,4 +120,13 @@ body{
     max-width: 100%;
     height: auto;
   }
+  .navbar a{
+    padding: 15px 5px;
+  }
+}
+@media screen and (max-width: 4360px) {
+    .logo {
+        height: 250px;
+    }
+    
 }
