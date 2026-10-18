@@ -100,3 +100,26 @@ body{
     text-align: center;
     text-decoration: none;
 }
+@media screen and (max-width: 768px) {
+  
+  body {
+    padding: 10px; /* Reduces spacing on small screens */
+  }
+
+  /* Make large headers smaller so they don't wrap awkwardly */
+  h1 {
+    font-size: 1.8rem; 
+  }
+
+  /* Force multi-column sections to stack vertically */
+  .container, .gallery, .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Make images scale down beautifully instead of breaking out */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
